@@ -1,0 +1,19 @@
+// implemente aqui sua função
+#include"questao.h"
+
+
+string junta(list<string> & l, const string & delim){
+    string final;
+    int i=l.size(); //vizualizar o tamanho da lista
+
+    for (auto & x: l) {
+        // "x" contém o dado atual da iteração
+        final+=x;
+        i--; //vai decrementando se a lista só tiver um item ele nao adiciona o delimitador
+        if(i>0)final+=delim;
+
+    }
+
+
+    return final;
+}
